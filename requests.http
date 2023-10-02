@@ -1,0 +1,50 @@
+### Obtencion de todos los Usuarios (Punto 1)
+GET http://localhost:1234/usuarios/
+
+### Obtención de un usaurio específico (Punto 2)
+
+GET http://localhost:1234/usuarios/8/
+
+### Agregado de un usuario nuevo (Punto 3)
+POST http://localhost:1234/usuarios
+Content-Type: application/json
+
+{
+    "id": 11,
+    "nombre": "German Marangon",
+    "edad": 29,
+    "email": "germarangon@hotmail.com",
+    "telefono": "11 6740-1681"
+}
+
+### Actualización de un usuario (Punto 4)
+
+PATCH http://localhost:1234/usuarios/8
+Content-Type: application/json
+
+{
+    "nombre": "German Marangon"
+}
+
+### Borrado de un producto (Punto 5)
+DELETE http://localhost:1234/usuarios/7
+
+### Obtención del precio de un producto por id (Punto 6)
+
+GET http://localhost:1234/productos/precio/2
+
+### Obtención del nombre de un producto por id (Punto 7)
+
+GET http://localhost:1234/productos/nombre/3
+
+### Obtención del telefono de un usuario por id (Punto 8)
+
+GET http://localhost:1234/usuarios/telefono/4
+
+### Obtención del telefono de un usuario por id (Punto 9)
+
+GET http://localhost:1234/usuarios/nombre/5
+
+### Suma de precio de productos (Punto 10)
+
+GET http://localhost:1234/productos/totalstock
